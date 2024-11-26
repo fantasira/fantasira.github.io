@@ -1,0 +1,210 @@
+<html>
+
+	<head>
+
+		<title>Formulaire d'inscription</title>
+		
+		<style>
+		
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				padding: 20px;
+				background-color: white;
+			}
+
+			header {
+				text-align: center;
+				background-color: black;
+				padding: 2%;
+			}
+
+			h1 {
+			color: white;
+			}
+			h2 {
+				color: black;
+			}
+			
+			h3 {
+				color: black;
+			}
+
+			p {
+				line-height: 1.6;
+				color: black;
+			}
+			
+			.choco { 
+				height: 12cm ;
+				margin-top: 8cm;
+				border: 2px ;
+				width: 50em;
+				border-style : solid;
+				border-color: black;
+				padding-left: 5px;
+				
+			}
+			
+			nava{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav1{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			a{
+			 text-decoration:none;
+			 font-family: Arial, sans-serif;
+			 color: black;
+			 font-size : x-large;
+			}
+			.onglet1{
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			
+			.onglet{
+				margin-left: 20px;
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			
+			<!-- bouton recherche -->
+			.search-container {
+				position: absolute;
+				top: 30px;
+				left: 50px;
+			}
+			
+			.search-container input[type="text"] {
+				padding: 6px;
+				width: 190px;
+			}
+			
+			.search-container button {
+				padding: 8px 12px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="search-container">
+		<form action="/search" method="get">
+			<input type="text" placeholder="Rechercher..." name="search">
+			<button type="submit">Rechercher</button>
+		</form>
+		</div>
+			<nav class="nav1">
+				
+				<div class="onglet1"> <a href = "formulaire.html"> Compte </a></div>
+				<div class ="onglet"> <a href = "aPropos.html">A propos</a></div>
+				<div class="onglet"> <a href = "??.html">Commande</a></div>
+			</nav>
+			<header><!-- couleur en en-tête-->
+					<h1>Formulaire d'inscription</h1>
+			</header>
+				<nav class= "nav">
+					
+					<div class="onglet1"> <a href = "venteaccueil.html"> Accueil</a></div>
+					<div class="onglet"> <a href = "Homme.html">Montre en bois homme</a></div>
+					<div class="onglet"> <a href = "Femme.html">Montre en bois femme</a></div>
+					
+				</nav>
+				
+			<br/>
+			<br/>
+			<br/>
+			<nav class="nava">
+				<div class ="choco">
+					<h2> Formulaire d'inscription</h2>
+					<form>
+						<h3>Civilité</h3>
+						
+						<br/>
+							Mademoiselle <input type = "radio" name = "civilite" value = "mademoiselle" />
+							<!--selectionner la case--> 
+							Madame <input type = "radio" name = "civilite" value = "madame" />
+							<!--selectionner la case--> 
+							Monsieur <input type = "radio" name = "civilite" value = "monsieur" />
+							<!--selectionner la case--> 
+							<br/>
+							<br/>
+					
+							Nom :<!--Entrer un nom de 20 caractères maximum -->
+							<input type = "texte" name = "nom" maxlength = "20" />
+							<br/>
+							<br/>
+					
+							Prénom : <!--Entrer un prénom de 20 caractères maximum-->
+							<input type = "texte" name ="prenom" maxlength = "20"/>
+							<br/>
+							<br/>
+					
+							Date de naissance :<!--selectionnner la date de naissance-->
+							<input type= "date" name= "Date de naissance"/>
+							<br/>
+							<br/>
+					
+							Code Postal : <!--Entrer le code postal de 5 caractères maximum-->
+							<input type = "number" name = "code postal" maxlength = "5"/>
+							<br/>
+							<br/>
+					
+							Email : <!--Entrer un email-->
+							<input type= "email" name= "Email"/>
+							<br/>
+							<br/>
+					
+							Mot de passe :<!--Entrer un mot de passe  de 12 caractères maximum-->
+							<input type = "password" name = "mot de passe" maxlength ="12"/>
+							<br/>
+							<br/>
+							<br/>
+							
+							<!--valider les informations ou les effacer-->
+							<input type="submit" value= "Valider" onClick= "alert('Vous avez valider votre inscription')";/> 		
+					
+							<input type = "reset" value= "Effacer"/>	
+					</form>		
+				</div>
+			</nav>
+	</body>
+
+</html>

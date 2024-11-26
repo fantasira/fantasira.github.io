@@ -1,0 +1,247 @@
+<html> 
+	<head>
+		<title>Homme </title>
+		<style>
+		
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				padding: 20px;
+				background-color: white;
+			}
+
+			header {
+				text-align: center;
+				background-color: black;
+				padding: 2%;
+			}
+
+			h1 {
+			color: white;
+			}
+			h2 {
+				color: white;
+			}
+
+			p {
+				line-height: 1.6;
+				color: black;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			img {
+				width : 400px;
+				height :300px;
+		
+			}
+			
+			.group {
+			
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.articles{
+				margin-bottom: 10cm;
+				margin: 1cm;
+				text-align: center;
+			}
+			.articles h2{
+				margin-top: 0.6cm;
+			}
+			.articles p{
+				margin-top: 0.5cm;
+			}
+			/*mon bouton ajoueter au panier */
+			.ajouter-au-panier {
+				background-color: transparent;
+				color: white;
+				border: 2px solid black;
+				padding: 10px 20px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+				background-color: black;
+				margin-top: 0.3cm;
+			}
+			
+			nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav1{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.onglet1{
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			
+			a{
+			 text-decoration:none;
+			 font-family: Arial, sans-serif;
+			 color: black;
+			 font-size : x-large;
+			}
+			
+			.onglet{
+				margin-left: 20px;
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			<!-- bouton recherche -->
+			.search-container {
+				position: absolute;
+				top: 30px;
+				left: 50px;
+			}
+			
+			.search-container input[type="text"] {
+				padding: 6px;
+				width: 190px;
+			}
+			
+			.search-container button {
+				padding: 8px 12px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+
+		</style>
+
+	</head>
+	<body> <!-- couleur blanche en fond-->
+		<div class="search-container">
+		<form action="/search" method="get">
+			<input type="text" placeholder="Rechercher..." name="search">
+			<button type="submit">Rechercher</button>
+		</form>
+		</div>
+			<nav class="nav1">
+				
+				<div class="onglet1"> <a href = "formulaire.html"> Compte </a></div>
+				<div class ="onglet"> <a href = "aPropos.html">A propos</a></div>
+				<div class="onglet"> <a href = "??.html">Commande</a></div>
+				
+			</nav>
+			
+			<header> <!-- couleur en en-tête-->
+				<h1>Montre en Bois Homme</h1>
+			</header>
+			
+			<nav class= "nav">
+				
+				<div class="onglet1"> <a href = "venteaccueil.html"> Accueil</a></div>
+				<div class ="onglet"> <a href = "Homme.html">Montre en bois homme</a></div>
+				<div class="onglet"> <a href = "Femme.html">Montre en bois femme</a></div>
+				
+			</nav>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			<div class='group'>
+			
+			<div class="articles">
+			<a href="montreH1.html">
+			<img src="imageHomme/IMG_7.jpg"/>
+			</a>
+			<p> prix : 89€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			<div class="articles">
+			<a href="montreH2.html">
+			<img src="imageHomme/IMG_9.jpg"/>
+			</a>
+			<p> prix : 69€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			<div class ="articles">
+			<a href="montreH3.html">
+			<img src="imageHomme/IMG_10.jpg"/>
+			</a>
+			<p> prix : 89€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			<div class ="articles">
+			<a href="montreH4.html">
+			<img src="imageHomme/IMG_11.jpg"/>
+			</a>
+			<p> prix : 109€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			</div>
+			
+			</br>
+			</br>
+			
+			<div class='group'>
+			
+			<div class ="articles">
+			<a href="montreH5.html">
+			<img src="imageHomme/IMG_12.jpg"/>
+			</a>
+			<p> prix : 59€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+		
+			<div class ="articles">
+			<a href="montreH6.html">
+			<img src="imageHomme/IMG_13.jpg"/>
+			</a>
+			<p> prix : 79€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			<div class ="articles">
+			<a href="montreH7.html">
+			<img src="imageHomme/IMG_14.jpg"/>
+			</a>
+			<p> prix : 95€ </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			<div class ="articles">
+			<a href="montreH8.html">
+			<img src="imageHomme/IMG_15.jpg"/>
+			</a>
+			<p> prix : 89€  </p>
+			<button class="ajouter-au-panier"> Ajouter au panier </button>
+			</div>
+			
+			</div>
+			
+			
+			
+	</body>
+
+</html>

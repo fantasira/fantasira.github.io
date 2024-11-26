@@ -1,0 +1,225 @@
+.search-container {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  width: 190px;
+}
+
+.search-container button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color: #fff;
+}
+nav{
+	height: 100px;
+	background:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 200px;
+}
+nav ul li{
+	margin: 0 10px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover{
+	background: bisque;
+}
+.nav1{
+	height: 50px;
+	background:white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 200px;
+}
+.nav1 ul li{
+	margin: 0 10px;
+}
+.nav1 ul{
+	display: flex;
+	list-style: none;
+}
+.nav1 ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 550;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+.nav1 ul li a:hover{
+	background: bisque;
+}
+@media (max-width: 940px) {
+nav ul{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+nav ul li{
+	margin: 40px 0;
+}
+nav ul li {
+	font-size: 20px;
+	display: block;
+}
+nav ul li a:hover,
+nav ul li a.active{
+	color: black;
+	background: none;
+}
+}
+span{
+	color: #834BE3;
+}
+.newcoll{
+	text-align: center;
+	margin-top: 1.5cm;
+}
+.articles{
+	margin-top: 1cm;
+	margin: 1cm;
+	text-align: center;
+	justify-content: space-around;
+}
+.articles h2{
+	margin-top: 0.6cm;
+}
+.articles p{
+	margin-top: 0.5cm;
+}														/*mon bouton ajoueter au panier */
+.ajouter-au-panier {
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	background-color: black;
+	margin-top: 0.3cm;
+}
+.ajouter-au-panier:hover {
+    background-color: brown;
+    color: white;
+}
+.articles-container{
+	display: flex;
+}
+.decouvrir{
+	text-align: center;
+	background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	background-color: black;
+	margin-top: 0.3cm;
+	margin-left: 50%;
+}
+.decouvrir:hover{
+	background-color: #834BE3;
+	color: #fff;
+}
+  .video {
+    width: 70%;
+    height: 50%;
+	margin: auto;
+	margin-top: 1.5cm;
+  }
+  .deuxlignes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	margin-top: 2cm;
+  }
+  .element {
+    text-align: center; /* Ajustez ceci selon vos besoins */
+    width: 30%;
+  }
+  .element img {
+    width: 100%; /* Assurez-vous que l'image occupe toute la largeur de son conteneur */
+    height: auto; /* Pour maintenir le rapport hauteur/largeur */
+  }
+  .element h2{
+	margin-top: 1cm;
+  }
+  .element p{
+	text-align: justify;
+	margin-top: 1cm;
+  }
+
+  /*pied de page */
+  .piedpage{
+	height: 300px;
+	background-color: black;
+  }
+ 
+  .avantpied{
+	height: 150px;
+	background-color:#C0C0C0;
+	margin-top: 2cm;
+	display: flex;
+  }
+.imagemap {
+	margin-top: 0.8cm;
+	margin-left: 6cm;
+}
+.picon1{
+	margin-top: 0.1cm;
+	margin-left: 5.3cm;
+}
+.container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.logo{
+	margin-left:17cm;
+}
+
+

@@ -1,0 +1,231 @@
+<html> 
+	<head>
+		<title>Homme </title>
+		<style>
+		
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				padding: 20px;
+				background-color: white;
+			}
+
+			header {
+				text-align: center;
+				background-color: black;
+				padding: 2%;
+			}
+
+			h1 {
+			color: white;
+			}
+			h2 {
+				color: white;
+			}
+			
+			h3 {
+				font-family :Verdana;
+				font-size : x-large;
+			}
+
+			p {
+				line-height: 1.6;
+				color: black;
+				font-weight: bold;
+			}
+			
+			img {
+				width : 700px;
+				height :600px;
+			
+		
+			}
+			
+			.group {
+			
+				display: flex;
+			}
+			
+			.cadre {
+				width : 400px;
+				height :300px;
+				border-style : solid;
+				border-color: black;
+				margin-left: 35px;				
+				margin-top: 60px;
+				margin-bottom: 40px;
+			}
+			
+			nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			.nav1{
+				height: 80px;
+				background:white;
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				padding: 0px 50px 0px 100px;
+			}
+			
+			a{
+			 text-decoration:none;
+			 font-family: Arial, sans-serif;
+			 color: black;
+			 font-size : x-large;
+			}
+			
+			li{
+				font-size : large;
+				line-height : 0.6cm;
+			}
+			
+			.onglet1{
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			
+			.onglet{
+				margin-left: 20px;
+				background:transparent;
+				decoration: none;
+				color: white;
+			}
+			
+			.description{
+				align-items:center;
+				justify-content: space-between;
+				background: #f2f2f2;
+				height: 100%;
+	
+			}
+			
+			.description1{
+				background: white; 
+				margin-left: 10px;
+				width : 700px;
+				height :600px;
+			}
+			
+			/*mon bouton ajoueter au panier */
+			.ajouter-au-panier {
+				background-color: transparent;
+				color: white;
+				border: 2px solid black;
+				padding: 10px 20px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+				background-color: black;
+				
+			}
+			
+			.articles{
+				margin-bottom: 10cm;
+				margin: 1cm;
+				text-align: center;
+			}
+			
+			<!-- bouton recherche -->
+			.search-container {
+				position: absolute;
+				top: 30px;
+				left: 50px;
+			}
+			
+			.search-container input[type="text"] {
+				padding: 6px;
+				width: 190px;
+			}
+			
+			.search-container button {
+				padding: 8px 12px;
+				background-color: #333;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+
+		</style>
+
+	</head>
+	<body> <!-- couleur blanche en fond-->
+		<div class="search-container">
+		<form action="/search" method="get">
+			<input type="text" placeholder="Rechercher..." name="search">
+			<button type="submit">Rechercher</button>
+		</form>
+		</div>
+			<nav class="nav1">
+				
+				<div class="onglet1"> <a href = "formulaire.html"> Compte </a></div>
+				<div class ="onglet"> <a href = "aPropos.html">A propos</a></div>
+				<div class="onglet"> <a href = "??.html">Commande</a></div>
+				
+			</nav>
+			
+			<header> <!-- couleur marron en en-tête-->
+				<h1>Montre en Bois Homme</h1>
+			</header>
+			
+			<nav class= "nav">
+				
+				<div class="onglet1"> <a href = "venteaccueil.html"> Accueil</a></div>
+				<div class="onglet"> <a href = "Homme.html">Montre en bois homme</a></div>
+				<div class="onglet"> <a href = "Femme.html">Montre en bois femme</a></div>
+				
+			</nav>
+			
+			<nav class="description">
+			
+				<img src="imageHomme/IMG_7.jpg"/>
+					<div class= "description1">
+					
+						<div class="articles">
+						
+							<h3>Montre Cadran En Bois - Celio</h3>
+							
+							<br/>
+							
+								<ul>
+								
+									<li>La montre est un exemple de durabilité et de respect de l’environnement, soulignant l’importance de matériaux renouvelables.</li>
+									
+									<br/>
+									
+									<li>Conçue pour ceux qui apprécient la simplicité et le confort, cette montre est un choix idéal pour un usage quotidien.</li>
+									
+									<br/>
+									
+									<li>Un accessoire parfait pour ceux qui recherchent une montre qui allie artisanat traditionnel et sensibilité moderne.</li>
+								
+								</ul>
+								
+									<br/>
+									<br/>
+									
+									<p> prix : 89€  </p>
+									<button class="ajouter-au-panier"> Ajouter au panier </button>
+						</div>
+						
+					</div>
+			</nav>
+
+					
+	</body>
+</html>
