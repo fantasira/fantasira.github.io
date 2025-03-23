@@ -2,153 +2,154 @@
 	<head>
 		<title>Réalisations - Fanta Diallo</title>
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap');
-			
-			body {
-			    font-family: 'Poppins', sans-serif;
-			    margin: 0;
-			    padding: 0;
-			    color: #2c2c2c;
-			    background-color: #fdf8fc; /* Fond très clair pour un effet doux */
-			}
-			
-			header {
-			    background: linear-gradient(135deg, #c79ecf, #e5c0e7); /* Dégradé féminin et élégant */
-			    color: #fff;
-			    padding: 20px;
-			    text-align: center;
-			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			}
-			
-			header h1 {
-			    margin: 0;
-			    font-size: 2.2em;
-			    font-family: 'Playfair Display', serif;
-			    font-weight: 500;
-			}
-			
-			nav {
-			    margin-top: 10px;
-			}
-			
-			nav a {
-			    color: #fff;
-			    margin: 0 15px;
-			    text-decoration: none;
-			    font-weight: 600;
-			    font-size: 1.1em;
-			    letter-spacing: 0.5px;
-			    transition: color 0.3s ease-in-out;
-			}
-			
-			nav a:hover {
-			    color: #ffd3f8; /* Effet pastel doux au survol */
-			}
-			
-			.container {
-			    width: 85%;
-			    margin: auto;
-			    overflow: hidden;
-			}
-			
-			.section {
-			    padding: 30px;
-			    margin: 30px 0;
-			    background: #ffffff;
-			    border-radius: 12px;
-			    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-			    transition: transform 0.3s ease-in-out;
-			}
-			
-			.section:hover {
-			    transform: translateY(-5px); /* Effet léger de survol */
-			}
-			
-			.section h2 {
-			    color: #a95eb5;
-			    border-bottom: 3px solid #e5c0e7;
-			    padding-bottom: 10px;
-			    margin-bottom: 20px;
-			    font-family: 'Playfair Display', serif;
-			    font-size: 1.8em;
-			}
-			
-			p {
-			    font-size: 1.1em;
-			    line-height: 1.6;
-			    color: #555;
-			}
-			
-			strong {
-			    color: #9b59b6;
-			}
-			
-			.gallery {
-			    display: flex;
-			    flex-wrap: wrap;
-			    gap: 15px;
-			    justify-content: center;
-			    align-items: center;
-			}
-			
-			.gallery img {
-			    width: 280px;
-			    height: 180px;
-			    object-fit: cover;
-			    border-radius: 8px;
-			    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-			    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-			}
-			
-			.gallery img:hover {
-			    transform: scale(1.07);
-			    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-			}
-			
-			ul {
-			    list-style: none;
-			    padding-left: 0;
-			}
-			
-			ul li {
-			    padding: 8px 0;
-			    font-size: 1em;
-			}
-			
-			iframe {
-			    width: 100%;
-			    height: 100vh;
-			    border: none;
-			}
-			
-			/* Boutons */
-			.button {
-			    display: inline-block;
-			    padding: 12px 25px;
-			    font-size: 1em;
-			    font-weight: 600;
-			    color: white;
-			    background: #d68fd6;
-			    border: none;
-			    border-radius: 6px;
-			    cursor: pointer;
-			    transition: background 0.3s ease-in-out;
-			}
-			
-			.button:hover {
-			    background: #b96fb9;
-			}
-			
-			/* Responsive */
-			@media (max-width: 768px) {
-			    .container {
-			        width: 95%;
-			    }
-			    .gallery img {
-			        width: 100%;
-			        height: auto;
-			    }
-			}
+			/* Styles globaux */
+		body {
+		    font-family: 'Poppins', sans-serif; /* Police moderne et professionnelle */
+		    margin: 0;
+		    padding: 0;
+		    color: #333;
+		    background-color: #f9f9fb; /* Blanc cassé pour un effet propre et épuré */
+		}
+		
+		/* Header */
+		header {
+		    background: linear-gradient(to right, #6a0dad, #8a2be2); /* Dégradé violet */
+		    color: #fff;
+		    padding: 20px;
+		    text-align: center;
+		    border-bottom: 3px solid #5a0cab; /* Bordure élégante */
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		}
+		
+		header h1 {
+		    margin: 0;
+		    font-size: 2.8em;
+		    font-weight: 600; /* Plus d'épaisseur pour un effet impactant */
+		}
+		
+		/* Navigation */
+		nav {
+		    margin: 10px 0;
+		    text-align: center;
+		}
+		
+		nav a {
+		    color: #fff;
+		    margin: 0 15px;
+		    text-decoration: none;
+		    font-weight: 500;
+		    font-size: 1.2em;
+		    transition: all 0.3s ease-in-out;
+		    padding: 8px 15px;
+		    border-radius: 5px;
+		}
+		
+		nav a:hover {
+		    background: rgba(255, 255, 255, 0.2);
+		    color: #f4d9ff; /* Effet rose pastel au survol */
+		}
+		
+		/* Conteneur principal */
+		.container {
+		    width: 85%;
+		    margin: auto;
+		    overflow: hidden;
+		}
+		
+		/* Sections */
+		.section {
+		    padding: 30px;
+		    margin: 20px 0;
+		    background: #ffffff;
+		    border-radius: 15px;
+		    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+		    transition: transform 0.3s ease-in-out;
+		}
+		
+		.section:hover {
+		    transform: translateY(-5px);
+		}
+		
+		.section h2 {
+		    color: #6a0dad; /* Violet profond */
+		    border-bottom: 3px solid #8a2be2;
+		    padding-bottom: 10px;
+		    margin-bottom: 20px;
+		    font-weight: 600;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		}
+		
+		/* Galerie d'images */
+		.gallery {
+		    display: flex;
+		    flex-wrap: wrap;
+		    gap: 20px;
+		    justify-content: center;
+		    align-items: center;
+		}
+		
+		.gallery img {
+		    width: 280px;
+		    height: 180px;
+		    object-fit: cover;
+		    border-radius: 10px;
+		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+		    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		}
+		
+		.gallery img:hover {
+		    transform: scale(1.1);
+		    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+		}
+		
+		/* Liens */
+		a {
+		    color: #6a0dad;
+		    font-weight: 500;
+		    text-decoration: none;
+		    transition: color 0.3s;
+		}
+		
+		a:hover {
+		    color: #8a2be2;
+		}
+		
+		/* Boutons */
+		button {
+		    background: #6a0dad;
+		    color: #fff;
+		    border: none;
+		    padding: 12px 20px;
+		    font-size: 1em;
+		    font-weight: 600;
+		    border-radius: 8px;
+		    cursor: pointer;
+		    transition: background 0.3s ease-in-out;
+		}
+		
+		button:hover {
+		    background: #8a2be2;
+		}
+		
+		/* Responsive */
+		@media screen and (max-width: 768px) {
+		    .gallery img {
+		        width: 100%;
+		        height: auto;
+		    }
+		
+		    nav {
+		        display: flex;
+		        flex-direction: column;
+		        align-items: center;
+		    }
+		
+		    nav a {
+		        margin-bottom: 10px;
+		    }
+		}
+
 
 
 		</style>
