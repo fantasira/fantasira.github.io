@@ -2,157 +2,72 @@
 	<head>
 		<title>Réalisations - Fanta Diallo</title>
 		<style>
-			/* Styles globaux */
-		body {
-		    font-family: 'Poppins', sans-serif; /* Police moderne et professionnelle */
-		    margin: 0;
-		    padding: 0;
-		    color: #333;
-		    background-color: #f9f9fb; /* Blanc cassé pour un effet propre et épuré */
-		}
-		
-		/* Header */
-		header {
-		    background: linear-gradient(to right, #6a0dad, #8a2be2); /* Dégradé violet */
-		    color: #fff;
-		    padding: 20px;
-		    text-align: center;
-		    border-bottom: 3px solid #5a0cab; /* Bordure élégante */
-		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-		}
-		
-		header h1 {
-		    margin: 0;
-		    font-size: 2.8em;
-		    font-weight: 600; /* Plus d'épaisseur pour un effet impactant */
-		}
-		
-		/* Navigation */
-		nav {
-		    margin: 10px 0;
-		    text-align: center;
-		}
-		
-		nav a {
-		    color: #fff;
-		    margin: 0 15px;
-		    text-decoration: none;
-		    font-weight: 500;
-		    font-size: 1.2em;
-		    transition: all 0.3s ease-in-out;
-		    padding: 8px 15px;
-		    border-radius: 5px;
-		}
-		
-		nav a:hover {
-		    background: rgba(255, 255, 255, 0.2);
-		    color: #f4d9ff; /* Effet rose pastel au survol */
-		}
-		
-		/* Conteneur principal */
-		.container {
-		    width: 85%;
-		    margin: auto;
-		    overflow: hidden;
-		}
-		
-		/* Sections */
-		.section {
-		    padding: 30px;
-		    margin: 20px 0;
-		    background: #ffffff;
-		    border-radius: 15px;
-		    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-		    transition: transform 0.3s ease-in-out;
-		}
-		
-		.section:hover {
-		    transform: translateY(-5px);
-		}
-		
-		.section h2 {
-		    color: #6a0dad; /* Violet profond */
-		    border-bottom: 3px solid #8a2be2;
-		    padding-bottom: 10px;
-		    margin-bottom: 20px;
-		    font-weight: 600;
-		    text-transform: uppercase;
-		    letter-spacing: 1px;
-		}
-		
-		/* Galerie d'images */
-		.gallery {
-		    display: flex;
-		    flex-wrap: wrap;
-		    gap: 20px;
-		    justify-content: center;
-		    align-items: center;
-		}
-		
-		.gallery img {
-		    width: 280px;
-		    height: 180px;
-		    object-fit: cover;
-		    border-radius: 10px;
-		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-		    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-		}
-		
-		.gallery img:hover {
-		    transform: scale(1.1);
-		    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-		}
-		
-		/* Liens */
-		a {
-		    color: #6a0dad;
-		    font-weight: 500;
-		    text-decoration: none;
-		    transition: color 0.3s;
-		}
-		
-		a:hover {
-		    color: #8a2be2;
-		}
-		
-		/* Boutons */
-		button {
-		    background: #6a0dad;
-		    color: #fff;
-		    border: none;
-		    padding: 12px 20px;
-		    font-size: 1em;
-		    font-weight: 600;
-		    border-radius: 8px;
-		    cursor: pointer;
-		    transition: background 0.3s ease-in-out;
-		}
-		
-		button:hover {
-		    background: #8a2be2;
-		}
-		
-		/* Responsive */
-		@media screen and (max-width: 768px) {
-		    .gallery img {
-		        width: 100%;
-		        height: auto;
-		    }
-		
-		    nav {
-		        display: flex;
-		        flex-direction: column;
-		        align-items: center;
-		    }
-		
-		    nav a {
-		        margin-bottom: 10px;
-		    }
-		}
-
-
-
-		</style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #dfcae1;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d0b8c8;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 400;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #c7a8b3;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 30px;
+            margin: 20px 0;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #dfcae1;
+            border-bottom: 2px solid #d0b8c8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 	</head>
 	<body>
 		<header>
