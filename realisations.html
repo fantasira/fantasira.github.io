@@ -57,8 +57,9 @@
 			.gallery {
 			    display: flex;
 			    flex-wrap: wrap;
-			    gap: 10px; /* Espacement entre les images */
-			    justify-content: center; /* Centre les images */
+			    gap: 15px; /* Espace entre les images */
+			    justify-content: center;
+			    align-items: center;
 			}
 			
 			.gallery img {
@@ -67,6 +68,11 @@
 			    object-fit: cover; /* Recadre l'image pour qu'elle remplisse la boîte */
 			    border-radius: 5px;
 			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			    transition: transform 0.3s ease-in-out;
+			}
+			
+			.gallery img:hover {
+			    transform: scale(1.05); /* Effet zoom au survol */
 			}
 
 			
