@@ -2,71 +2,89 @@
 	<head>
 		<title>Réalisations - Fanta Diallo</title>
 		<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #dfcae1;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #d0b8c8;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-weight: 400;
-        }
-        nav {
-            margin: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #c7a8b3;
-        }
-        .container {
-            width: 85%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .section {
-            padding: 30px;
-            margin: 20px 0;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            color: #dfcae1;
-            border-bottom: 2px solid #d0b8c8;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+		        body {
+		    font-family: Arial, sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    color: #333;
+		    background-color: #f4f4f4;
+		}
+		
+		header {
+		    background: #dfcae1;
+		    color: #fff;
+		    padding: 20px;
+		    text-align: center;
+		    border-bottom: 2px solid #d0b8c8;
+		}
+		
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		    font-weight: 400;
+		}
+		
+		nav {
+		    margin: 10px 0;
+		    text-align: center;
+		}
+		
+		nav a {
+		    color: #fff;
+		    margin: 0 15px;
+		    text-decoration: none;
+		    font-weight: 500;
+		    font-size: 1.1em;
+		    transition: color 0.3s;
+		}
+		
+		nav a:hover {
+		    color: #c7a8b3;
+		}
+		
+		.container {
+		    width: 85%;
+		    margin: auto;
+		    overflow: hidden;
+		}
+		
+		.section {
+		    padding: 30px;
+		    margin: 20px 0;
+		    background: #ffffff;
+		    border-radius: 10px;
+		    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+		}
+		
+		.section h2 {
+		    color: #dfcae1;
+		    border-bottom: 2px solid #d0b8c8;
+		    padding-bottom: 10px;
+		    margin-bottom: 20px;
+		}
+		
+		/* Utilisation d'un display grid pour une disposition plus harmonieuse des images */
+		.gallery {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		    gap: 15px;
+		}
+		
+		.gallery img {
+		    width: 100%;
+		    height: 200px;
+		    object-fit: cover;
+		    border-radius: 5px;
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		
+		/* Agrandissement de l'iframe */
+		.iframe {
+		    width: 100%;
+		    height: 600px; /* Hauteur augmentée pour un meilleur affichage */
+		    border: none;
+		}
+
     </style>
 	</head>
 	<body>
