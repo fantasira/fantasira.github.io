@@ -2,85 +2,133 @@
 	<head>
 		<title>Réalisations - Fanta Diallo</title>
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+			
 			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				color: #333;
-				background-color: #f4f4f4; /* Fond gris clair pour un design épuré */
+			    font-family: 'Orbitron', sans-serif;
+			    margin: 0;
+			    padding: 0;
+			    color: #0ff; /* Texte cyan néon */
+			    background-color: #0a0a0a; /* Fond sombre */
+			    overflow-x: hidden;
 			}
+			
 			header {
-				background: #dfcae1; /* Violet pastel*/
-				color: #fff;
-				padding: 20px;
-				text-align: center;
-				border-bottom: 2px solid #d0b8c8; /* Violet pastel légèrement plus foncé pour la bordure */
+			    background: linear-gradient(90deg, #12004d, #45006e);
+			    color: #0ff;
+			    padding: 20px;
+			    text-align: center;
+			    border-bottom: 3px solid #0ff;
+			    box-shadow: 0px 0px 10px #0ff;
 			}
+			
 			header h1 {
-				margin: 0;
-				font-size: 2.5em;
-				font-weight: 400; /* Poids de police plus léger pour une apparence élégante */
+			    margin: 0;
+			    font-size: 2.8em;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			    text-shadow: 0px 0px 15px #0ff;
 			}
+			
 			nav {
-				margin: 10px 0;
-				text-align: center;
+			    text-align: center;
+			    margin-top: 15px;
 			}
+			
 			nav a {
-				color: #fff;
-				margin: 0 15px;
-				text-decoration: none;
-				font-weight: 500;
-				font-size: 1.1em;
-				transition: color 0.3s;
+			    color: #0ff;
+			    margin: 0 20px;
+			    text-decoration: none;
+			    font-size: 1.2em;
+			    font-weight: bold;
+			    transition: color 0.4s, text-shadow 0.4s;
 			}
+			
 			nav a:hover {
-				color: #c7a8b3; /* violet pastel clair pour les liens au survol */
+			    color: #ff00ff;
+			    text-shadow: 0px 0px 8px #ff00ff;
 			}
+			
 			.container {
-				width: 85%;
-				margin: auto;
-				overflow: hidden;
+			    width: 90%;
+			    margin: auto;
+			    overflow: hidden;
+			    padding-top: 20px;
 			}
+			
 			.section {
-				padding: 30px;
-				margin: 20px 0;
-				background: #ffffff; /* Fond blanc pour les sections */
-				border-radius: 10px;
-				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+			    padding: 30px;
+			    margin: 20px 0;
+			    background: rgba(255, 255, 255, 0.05);
+			    border-radius: 10px;
+			    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+			    backdrop-filter: blur(10px);
+			    transition: transform 0.3s;
 			}
+			
+			.section:hover {
+			    transform: scale(1.02);
+			}
+			
 			.section h2 {
-				color: #dfcae1; /* Violet pastel */
-				border-bottom: 2px solid #d0b8c8; /* Bordure pour séparer le titre du contenu */
-				padding-bottom: 10px;
-				margin-bottom: 20px;
+			    color: #0ff;
+			    border-bottom: 2px solid #ff00ff;
+			    padding-bottom: 10px;
+			    margin-bottom: 20px;
+			    text-shadow: 0px 0px 8px #0ff;
+			    font-size: 2em;
 			}
+			
 			.gallery {
 			    display: flex;
 			    flex-wrap: wrap;
-			    gap: 15px; /* Espace entre les images */
+			    gap: 20px;
 			    justify-content: center;
-			    align-items: center;
 			}
 			
 			.gallery img {
-			    width: 300px; /* Taille uniforme */
-			    height: 200px; /* Taille uniforme */
-			    object-fit: cover; /* Recadre l'image pour qu'elle remplisse la boîte */
-			    border-radius: 5px;
-			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-			    transition: transform 0.3s ease-in-out;
+			    width: 280px;
+			    height: 180px;
+			    object-fit: cover;
+			    border-radius: 10px;
+			    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+			    transition: transform 0.4s, box-shadow 0.4s;
 			}
 			
 			.gallery img:hover {
-			    transform: scale(1.05); /* Effet zoom au survol */
+			    transform: scale(1.1);
+			    box-shadow: 0px 0px 25px rgba(255, 0, 255, 0.8);
+			}
+			
+			button {
+			    background: linear-gradient(45deg, #0ff, #ff00ff);
+			    color: black;
+			    font-size: 1.2em;
+			    font-weight: bold;
+			    padding: 10px 20px;
+			    border: none;
+			    border-radius: 5px;
+			    cursor: pointer;
+			    text-transform: uppercase;
+			    transition: background 0.4s, box-shadow 0.4s;
+			}
+			
+			button:hover {
+			    background: linear-gradient(45deg, #ff00ff, #0ff);
+			    box-shadow: 0px 0px 20px #0ff;
+			}
+			
+			/* Effet glitch sur les titres */
+			@keyframes glitch {
+			    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #0ff; }
+			    50% { text-shadow: -2px -2px #ff00ff, 2px 2px #0ff; }
+			    100% { text-shadow: 2px 2px #ff00ff, -2px -2px #0ff; }
+			}
+			
+			h2 {
+			    animation: glitch 1.5s infinite alternate;
 			}
 
-			
-			.iframe {
-				width: 100%;
-				height: 100vh;
-				border:none;
-			}
 		</style>
 	</head>
 	<body>
