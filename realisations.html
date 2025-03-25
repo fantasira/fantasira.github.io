@@ -85,14 +85,19 @@
 		            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		            gap: 15px;
 		        }
-		
-		        .gallery img {
-		            width: 100%;
-		            height: 200px;
-		            object-fit: cover;
-		            border-radius: 5px;
-		            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		        }
+
+			 .gallery img {
+			    width: 100%;
+			    height: 300px; /* Augmenté de 200px à 300px */
+			    object-fit: cover;
+			    border-radius: 10px; /* Coins légèrement plus arrondis */
+			    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+			    transition: transform 0.3s ease-in-out;
+			}
+			
+			.gallery img:hover {
+			    transform: scale(1.05); /* Effet de zoom au survol */
+			}
 		
 		        .iframe {
 		            width: 100%;
