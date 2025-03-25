@@ -12,7 +12,7 @@
             color: #333;
             background-color: #f4f4f4; /* Fond gris clair pour un design épuré */
         }
-    header {
+       header {
 	    background: linear-gradient(90deg, #D8BFD8, #FFC0CB, #FFDAB9);
 	    background-size: 300% 300%;
 	    animation: gradientAnimation 6s infinite alternate ease-in-out;
@@ -32,9 +32,8 @@
 	    100% {
 	        background-position: 0% 50%;
 	    }
-	
-
 	}
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
@@ -152,6 +151,12 @@
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
+	.skills img {
+	    width: 80px; /* Ajuste selon tes besoins */
+	    height: 80px; /* Taille uniforme */
+	    object-fit: contain; /* Garde les proportions sans déformer */
+	    margin: 5px;
+	}
     </style>
 </head>
 <body>
@@ -169,7 +174,7 @@
     <div class="container">
         <section id="accueil" class="section">
             <h2>Bienvenue</h2>
-            <p>Bonjour, je suis Fanta Diallo, étudiante en 2e année de BTS services informatiques aux organisations (SIO) spécialisation SLAM. Découvrez ici mes projets, mon expérience professionnelle et mes compétences en développement.</p>
+            <p>Bonjour, je suis Fanta Diallo, étudiante en 2ème année de BTS services informatiques aux organisations (SIO) spécialisation SLAM. Découvrez ici mes projets, mon expérience professionnelle et mes compétences en développement.</p>
         </section>
 		
 		<section id="apropos" class="section">
@@ -180,7 +185,7 @@
 
 
         <section id="competences" class="section">
-            <h2>Compétences et Expériences</h2>
+            <h2>Compétences</h2>
             <div class="skills">
                 <h2>Compétences</h2>
                 <ul>
@@ -194,14 +199,16 @@
                 </ul>
             </div>
 			<div class="skills">
-				<h2>Développement</h2>
+				<h2>Competences informatiques</h2>
                 <ul>
-                    <li> HTML</li>
-					<li> CSS</li>
-					<li> Javascript</li>
-					<li> PHP</li>
-					<li> SQL</li>
-					<li> Java/Python</li>
+			<img src="html.png" alt="">
+			<img src="css.jpg" alt="">
+			<img src="javascript.png" alt="">
+			<img src="php.png" alt="">
+			<img src="sql.png" alt="">
+			<img src="java.png" alt="">
+			<img src="python.png" alt="">
+			</br>
 					<li> MySQL</li>
 					<li> Adressage/Routage</li>
 					<li> Protocoles réseaux</li>
@@ -218,13 +225,13 @@
 
                 <h2>Expériences Professionnelles</h2>
                 <ul>
-					<li>Stage Association Nazario - De janvier 2025 à février 2025</li>
-					<li>Stage Association Nazario - De mai 2024 à juin 2024</li>
-                    <li>Caissière chez Carrefour Ville du Bois - D'octobre 2023 à novembre 2023</li>
-                    <li>Préparatrice de commande chez Adecco Amazon, Brétigny-sur-Orge - De mai 2023 à juillet 2023</li>
-                    <li>Vendeuse chez Zara Home, Madeleine/Defense - D'avril 2023 à mai 2023</li>
-                    <li>Assistante à la Mairie des Ulis - Août 2020</li>
-                    <li>Stage d'observation au CNRS Orsay - De novembre 2018 à décembre 2018</li>
+			<li>Stage Association Nazario - De janvier 2025 à février 2025</li>
+			<li>Stage Association Nazario - De mai 2024 à juin 2024</li>
+                    	<li>Caissière chez Carrefour Ville du Bois - D'octobre 2023 à novembre 2023</li>
+                   	<li>Préparatrice de commande chez Adecco Amazon, Brétigny-sur-Orge - De mai 2023 à juillet 2023</li>
+                   	<li>Vendeuse chez Zara Home, Madeleine/Defense - D'avril 2023 à mai 2023</li>
+                   	<li>Assistante à la Mairie des Ulis - Août 2020</li>
+                 	<li>Stage d'observation au CNRS Orsay - De novembre 2018 à décembre 2018</li>
                 </ul>
             </div>
         </section>
@@ -243,26 +250,6 @@
             </ul>
             <p>Je suis également ouverte à d'autres opportunités dans le domaine de l'informatique, où je pourrais appliquer mes compétences et contribuer au développement de solutions innovantes.</p>
         </section>
-		
-		 <section id="projets" class="section">
-            <h2>Projets Réalisés</h2>
-            <h3>Refonte du Site Internet de l'Association Nazario</h3>
-            <p>Lors de mon stage chez l'association Nazario, j'ai réalisé la refonte complète de leur site internet. Le projet a inclus la conception d'une nouvelle interface utilisateur, la mise à jour des fonctionnalités, et l'optimisation pour les performances et l'accessibilité.</p>
-            <div class="gallery">
-                <img src="nazario1.png" alt="Capture d'écran du site Nazario refondu">
-                <!-- Ajoutez plus d'images du projet ici si disponible -->
-            </div>
-            <p>Pour plus de détails sur ce projet, veuillez consulter la section <a href="realisations.html" target="_blank">réalisation</a>.</p>
-			
-			
-			<h3>Veille Technologique</h3>
-            <p>Dans le cadre de l'obtention de mon diplome de BTS SIO (services informatiques aux organisations), j'ai dû créer un site en language php sur une veille technologique.</p>
-            <div class="gallery">
-                <img src="VeilleTechno.png" alt="Capture d'écran de la veille technologique">
-                <!-- Ajoutez plus d'images du projet ici si disponible -->
-            </div>
-			<p>Pour plus de détails sur ce projet, veuillez consulter la section <a href="realisations.html" target="_blank">réalisation</a>.</p>
-		</section>
 
 
         <section id="cv" class="section">
@@ -293,6 +280,10 @@
     </div>
 
     <footer>
+        <p>&copy; 2025 Fanta Diallo. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
         <p>&copy; 2024 Fanta Diallo. Tous droits réservés.</p>
     </footer>
 </body>
