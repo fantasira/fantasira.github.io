@@ -86,19 +86,19 @@
 		            gap: 15px;
 		        }
 
-			 .gallery img {
-			    width: 250px; /* Réduit la largeur des images */
-			    height: 200px; /* Ajuste la hauteur */
+			.gallery img {
+			    width: 250px; /* Largeur de base */
+			    height: 200px; /* Hauteur de base */
 			    object-fit: cover; /* Coupe l’image pour remplir la zone */
-			    transition: all 0.3s ease-in-out; /* Animation fluide */
+			    transition: transform 0.5s ease-in-out; /* Animation fluide */
 			    border-radius: 10px;
 			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			}
 			
 			.gallery img:hover {
-			    width: 300px; /* Augmente la taille pour afficher plus de détails */
-			    height: auto; /* Garde les proportions */
+			    transform: scale(2); /* Agrandit l’image au survol (x2) */
 			    object-fit: contain; /* Affiche l’image en entier */
+			    z-index: 10; /* Met l’image au premier plan */
 			}
 
 		
