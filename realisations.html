@@ -577,24 +577,174 @@
   </div>
 </section>
     </main><footer class="footer">© 2026 Fanta Diallo. Tous droits réservés.</footer>
+
+
+
+
+<!-- Fenêtre d'affichage des images en plein écran -->
+<div id="imageModal" class="image-modal">
+
+  <span
+    id="imageModalClose"
+    class="image-modal-close"
+    aria-label="Fermer l'image"
+  >
+    &times;
+  </span>
+
+  <img
+    id="imageModalContent"
+    class="image-modal-content"
+    src=""
+    alt=""
+  >
+
+  <div class="image-modal-hint">
+    Clique en dehors de l'image ou appuie sur Échap pour fermer
+  </div>
+
+</div>
+
+    
 <script>
+
+/* =========================================
+   GALERIES DES PROJETS
+========================================= */
+
 document.querySelectorAll('.project').forEach(project => {
+
   const mainImage = project.querySelector('.project-media img');
   const thumbnails = project.querySelectorAll('.gallery img');
+
+  if (!mainImage) return;
+
   thumbnails.forEach(thumbnail => {
+
     thumbnail.addEventListener('click', () => {
-      if (!mainImage) return;
-      const oldSrc = mainImage.src;
+
       mainImage.src = thumbnail.src;
-      thumbnails.forEach(img => img.classList.remove('active'));
+      mainImage.alt = thumbnail.alt || mainImage.alt;
+
+      thumbnails.forEach(img => {
+        img.classList.remove('active');
+      });
+
       thumbnail.classList.add('active');
-      mainImage.animate([
-        { opacity: 0.35, transform: 'scale(.985)' },
-        { opacity: 1, transform: 'scale(1)' }
-      ], { duration: 260, easing: 'ease-out' });
+
+      mainImage.animate(
+        [
+          {
+            opacity: 0.35,
+            transform: 'scale(.985)'
+          },
+          {
+            opacity: 1,
+            transform: 'scale(1)'
+          }
+        ],
+        {
+          duration: 260,
+          easing: 'ease-out'
+        }
+      );
+
     });
+
   });
+
 });
-</script>
+
+
+/* =========================================
+   AFFICHAGE DES IMAGES EN PLEIN ÉCRAN
+========================================= */
+
+const imageModal =
+  document.getElementById('imageModal');
+
+const imageModalContent =
+  document.getElementById('imageModalContent');
+
+const imageModalClose =
+  document.getElementById('imageModalClose');
+
+
+/* Ouvrir l'image principale */
+
+document
+  .querySelectorAll('.project-media img')
+  .forEach(image => {
+
+    image.addEventListener('click', () => {
+
+      imageModalContent.src = image.src;
+
+      imageModalContent.alt =
+        image.alt || 'Aperçu du projet';
+
+      imageModal.classList.add('open');
+
+      document.body.style.overflow = 'hidden';
+
+    });
+
+  });
+
+
+/* Fermer la fenêtre */
+
+function closeImageModal() {
+
+  imageModal.classList.remove('open');
+
+  document.body.style.overflow = '';
+
+  imageModalContent.src = '';
+
+}
+
+
+/* Fermer avec la croix */
+
+imageModalClose.addEventListener(
+  'click',
+  closeImageModal
+);
+
+
+/* Fermer en cliquant sur le fond */
+
+imageModal.addEventListener(
+  'click',
+  event => {
+
+    if (event.target === imageModal) {
+      closeImageModal();
+    }
+
+  }
+);
+
+
+/* Fermer avec la touche Échap */
+
+document.addEventListener(
+  'keydown',
+  event => {
+
+    if (
+      event.key === 'Escape' &&
+      imageModal.classList.contains('open')
+    ) {
+      closeImageModal();
+    }
+
+  }
+);
+
+</script>    
+
+    
 </body>
 </html>
