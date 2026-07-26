@@ -1540,10 +1540,6 @@ const imageModalPrev =
 const imageModalNext =
   document.getElementById('imageModalNext');
 
-const imageModalCounter =
-  document.getElementById('imageModalCounter');
-
-
 let currentGallery = [];
 
 let currentImageIndex = 0;
@@ -1599,14 +1595,6 @@ function displayModalImage(index) {
   imageModalContent.alt =
     image.alt || 'Aperçu du projet';
 
-
-  /*
-   * Compteur.
-   * Exemple : 5 / 24
-   */
-
-  imageModalCounter.textContent =
-    `${currentImageIndex + 1} / ${currentGallery.length}`;
 
 
   /*
@@ -1773,8 +1761,6 @@ function closeImageModal() {
   document.body.style.overflow = '';
 
   imageModalContent.src = '';
-
-  imageModalCounter.textContent = '';
 
   currentGallery = [];
 
